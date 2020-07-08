@@ -49,11 +49,10 @@ class ApiClient
 
     /**
      * @param string $url
-     * @param array $parameter
      * @param array $options
      * @return ApiResponse
      */
-    public function get(string $url, array $parameter = [], array $options = []): ApiResponse
+    public function get(string $url, array $options = []): ApiResponse
     {
 
         return $this->request(self::METHOD_GET, $url, [], $options);
